@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/49a18c2724.js" crossorigin="anonymous"></script>
+    <title>2.0v Temperature Converter</title>
+</head>
+<body>
+
+    <div class="temperature-container">
+        <h1 class="title">
+            Temperature Converter
+        </h1>
+        
+        <div class="input-container">
+            <input type="text" name="inputValue" id="temperatureValue" placeholder="0" class="contentStyle">
+        </div>
+
+        <div class="temperatureType-container">
+            <div class="dropdownList-container">
+                <div class="display-container fromUnitDisplay-container">
+                    <span class="display FromUnitDisplay contentStyle">From Unit</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+                <ul class="options-container hidden">
+                    <li class="options contentStyle">Farenheit</li>
+                    <li class="options contentStyle">Celseus</li>
+                    <li class="options contentStyle">Kelvin</li>
+                </ul>
+            </div>
+
+            <div class="dropdownList-container">
+                <div class="display-container toUnitDisplay-container">
+                    <span class="display fromUnitDisplay contentStyle">To Unit</span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                
+                <ul class="options-container hidden">
+                    <li class="options contentStyle">Farenheit</li>
+                    <li class="options contentStyle">Celseus</li>
+                    <li class="options contentStyle">Kelvin</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="result-container">
+            <p class="displayResult contentStyle">Nothing yet</p>
+        </div>
+
+        <button id="calculate" onclick="calculate()">Convert</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
